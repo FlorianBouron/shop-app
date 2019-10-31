@@ -8,13 +8,18 @@ import '../models/cart.dart';
 
 class Orders with ChangeNotifier {
   List<Order> _orders = [];
+  final String authToken;
+  final String userId;
+
+  Orders(this.authToken, this.userId, this._orders);
 
   List<Order> get orders {
     return [..._orders];
   }
 
   Future<void> addOrder(List<Cart> cartProducts, double total) async {
-    const url = 'https://flutter-2e3af.firebaseio.com/orders.json';
+    final url =
+        'https://flutter-2e3af.firebaseio.com/orders/$userId.json?auth=$authToken';
     final timestamp = DateTime.now();
     final response = await http.post(
       url,
@@ -44,7 +49,8 @@ class Orders with ChangeNotifier {
   }
 
   Future<void> fetchOrders() async {
-    const url = 'https://flutter-2e3af.firebaseio.com/orders.json';
+    final url =
+        'https://flutter-2e3af.firebaseio.com/orders/$userId.json?auth=$authToken';
     final response = await http.get(url);
     final List<Order> loadedOrders = [];
     final extractedData = json.decode(response.body) as Map<String, dynamic>;
