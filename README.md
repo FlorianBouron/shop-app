@@ -2,6 +2,23 @@
 
 📱An app to shop from your phone.
 
+You will find an export of the database used for the development of this project in the file named `db-export.json`.
+
+The rules used in firebase were the following:
+```
+{
+  "rules": {
+    ".read": "auth!=null",
+    ".write": "auth!=null",
+      "products": {
+        ".indexOn": [
+          "creatorId"
+        ]
+      }
+  }
+}
+```
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.

@@ -1,0 +1,70 @@
+{
+  "orders" : {
+    "-Lr3ZiYNtCglrhoVxXSl" : {
+      "amount" : 68.98,
+      "dateTime" : "2019-10-13T10:03:33.458058",
+      "products" : [ {
+        "id" : "2019-10-13 10:03:29.780966",
+        "price" : 12.99,
+        "quantity" : 1,
+        "title" : "Red Shirt"
+      }, {
+        "id" : "2019-10-13 10:03:30.685412",
+        "price" : 55.99,
+        "quantity" : 1,
+        "title" : "Trousers"
+      } ]
+    },
+    "-Lr3zl7TogB8-jql_RTi" : {
+      "amount" : 25.98,
+      "dateTime" : "2019-10-13T12:01:42.008343",
+      "products" : [ {
+        "id" : "2019-10-13 12:01:38.898795",
+        "price" : 12.99,
+        "quantity" : 2,
+        "title" : "Red Shirt"
+      } ]
+    },
+    "E1ZFIpxlQwbHe5mEffWd8fvUlJb2" : {
+      "-LsSgPFoESOr13wbNA2n" : {
+        "amount" : 25.98,
+        "dateTime" : "2019-10-30T17:23:30.303134",
+        "products" : [ {
+          "id" : "2019-10-30 17:23:25.571284",
+          "price" : 12.99,
+          "quantity" : 2,
+          "title" : "Red Shirt"
+        } ]
+      }
+    }
+  },
+  "products" : {
+    "-LqXOLe1XHMBIgfufnw6" : {
+      "creatorId" : "E1ZFIpxlQwbHe5mEffWd8fvUlJ22b",
+      "description" : "A red shirt - it is pretty red!",
+      "imageUrl" : "https://cdn.pixabay.com/photo/2016/10/02/22/17/red-t-shirt-1710578_1280.jpg",
+      "price" : 12.99,
+      "title" : "Red Shirt"
+    },
+    "-LqXU527O9rX8RutAzW-" : {
+      "creatorId" : "E1ZFIpxlQwbHe5mEffWd8fvUl222",
+      "description" : "A nice pair of trousers.",
+      "imageUrl" : "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Trousers%2C_dress_%28AM_1960.022-8%29.jpg/512px-Trousers%2C_dress_%28AM_1960.022-8%29.jpg",
+      "price" : 55.99,
+      "title" : "Trousers"
+    },
+    "-LrZUUn2o4mmnM_P135_" : {
+      "creatorId" : "E1ZFIpxlQwbHe5mEffWd8fvUlJb2",
+      "description" : "Some book about cool stuff\n",
+      "imageUrl" : "https://www.mycommercespot.com/wp-content/uploads/2019/06/books-521812297.jpg",
+      "price" : 14.99,
+      "title" : "My new book"
+    }
+  },
+  "userFavorites" : {
+    "E1ZFIpxlQwbHe5mEffWd8fvUlJb2" : {
+      "-LqXOLe1XHMBIgfufnw6" : true,
+      "-LqXU527O9rX8RutAzW-" : true
+    }
+  }
+}
